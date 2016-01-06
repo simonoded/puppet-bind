@@ -122,6 +122,7 @@ define bind::server::conf (
   $keys                   = {},
   $includes               = [],
   $views                  = {},
+  $query_source		  = 'address * port *',
 ) {
 
   # Everything is inside a single template
