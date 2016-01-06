@@ -73,6 +73,9 @@ options {
     check-names <%= line %>;
 <% end -%>
 <% end -%>
+<%if !@query_source.empty? -%>
+    query-source <%= @query_source %>;
+<% end -%>
 
 <% if !@extra_options.empty? -%>
 <% @extra_options.sort_by {|key, value| key}.each do |key,value| -%>
